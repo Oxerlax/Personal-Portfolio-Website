@@ -40,6 +40,10 @@ h2 {
     color: #222;
 }
 
+h3 a{
+    color: inherit;
+}
+
 .project, .job {
     margin-bottom: 10px;
 }
