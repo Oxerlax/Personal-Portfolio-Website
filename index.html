@@ -3,96 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kris Bali | Portfolio</title>
+    <title>Kris Bali Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <a href="#summary">Summary</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-    </nav>
+    <div id="stars-container"></div>
 
     <header>
-        <h1>Kris Bali</h1>
-        <p>Software Engineering Student | Rochester Institute of Technology</p>
-        <p>(716)-251-2517 | kob20800@gmail.com | <a href="https://www.linkedin.com/in/kris-bali-08183a35a/" target="_blank">LinkedIn</a> | <a href="https://github.com/Oxerlax" target="_blank">GitHub</a> | Rochester, NY</p>
+        <div class="logo">Portfolio</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
 
-    <section id="summary">
-        <h2>Objective Statement</h2>
-        <p>
-        Motivated Computer Science student seeking a Software Engineering co-op or internship from May, 2026 to August, 2026. Skilled in applying programming concepts to real-world problems and eager to collaborate with teams to build innovative, impactful software solutions while continuing to grow as a developer.
-        </p>
-    </section>
+    <div class="container">
+        <section id="home">
+            <h1>Software Engineer</h1>
+            <p class="subtitle">Designing, building, and improving software systems</p>
+            <p class="subtitle">Seeking Summer 2026 Internship</p>
+            <a href="#projects" class="cta-button">View My Work</a>
+        </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <p><strong>Bachelor of Science, Computer Science</strong><br>
-        Rochester Institute of Technology, Rochester, NY<br>
-        GPA: 3.92/4.00<br>
-        Expected Graduation: May, 2028
-        </p>
-    </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="card">
+                <p style="font-size: 18px; line-height: 1.8;">
+                    Hello! I'm a Computer Science student at Rochester Institute of Technology with a passion for building efficient, 
+                    scalable software systems. With a strong foundation in object-oriented programming, data structures, and 
+                    algorithms, I enjoy tackling complex problems and creating solutions that make a real impact. I'm actively 
+                    seeking a Software Engineering Internship for Summer 2026 where I can apply my skills and continue growing 
+                    as a developer!
+                </p>
+            </div>
+        </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
+        <section id="education">
+            <h2>Education</h2>
+            <div class="card">
+                <div class="education-info">
+                    <div class="education-left">
+                        <h3>Rochester Institute of Technology</h3>
+                        <p style="margin-top: 20px;">Bachelor's of Science, Computer Science</p>
+                        <p style="margin-top: 20px;">August 2024 - May 2028 | Rochester, NY</p>
+                    </div>
+                    <div class="education-right">
+                        <p class="gpa">GPA: 3.92/4.00</p>
+                    </div>
+                </div>
+                <p style="margin-top: 20px;"><strong>Relevant Coursework:</strong> Computer Science I/II, Computer Science Theory, Mechanics of Programming</p>
+                <p style="margin-top: 20px;"><strong>Expected Coursework:</strong> Introduction to Software Engineering, Analysis of Algorithms</p>
+            </div>
+        </section>
 
-        <div class="project">
-            <h3><a href="https://github.com/Oxerlax/RangeLine" target="_blank">RangeLine</a></h3>
-            <ul>
-                <li>Developed a Python script enabling users to select a golf club from a master key and input previous distances shot.</li>
-                <li>Facilitated multiple distance submissions with easy modifications for improved interaction.</li>
-                <li>Utilized JSON storage to monitor previous 15 shots and generate trend graphs illustrating distances.</li>
-            </ul>
-        </div>
+        <section id="skills">
+            <h2>Technical Skills</h2>
 
-        <div class="project">
-            <h3><a href="https://github.com/Oxerlax/FrameMaster" target="_blank">FrameMaster (In Progess)</a></h3>
-            <ul>
-                <li>Engineered a JavaFX GUI for a bowling game, accommodating up to 5 players and 10 frames with real-time scoring.</li>
-                <li>Streamlined user input for scoring with validation, modifications, and game confirmation.</li>
-                <li>Used Gson to store scores and display statistics such as strike percentage and spare percentage.</li>
-            </ul>
-        </div>
-    </section>
+            <div class="card">
+                <h3>Languages</h3>
+                <div class="skills-grid">
+                    <div class="skill-tag">Python</div>
+                    <div class="skill-tag">Java</div>
+                    <div class="skill-tag">HTML/CSS</div>
+                    <div class="skill-tag">JavaScript</div>
+                    <div class="skill-tag">C</div>
+                </div>
+            </div>
 
-    <section id="experience">
-        <h2>Work Experience</h2>
+            <div class="card">
+                <h3>Tools</h3>
+                <div class="skills-grid">
+                    <div class="skill-tag">Git</div>
+                    <div class="skill-tag">GitHub</div>
+                    <div class="skill-tag">Visual Studio Code</div>
+                    <div class="skill-tag">PyCharm</div>
+                    <div class="skill-tag">IntelliJ IDEA</div>
+                </div>
+            </div>
 
-        <div class="job">
-            <h3>Line Crew Member and Dishwasher</h3>
-            <p><em>Cantina and Grille at Global Village, Rochester Institute of Technology</em><br>
-            Sep 2024 - May 2025, August 2025 - Present</p>
-            <ul>
-                <li>Assemble ingredients for 150+ total burritos, burrito bowls, tacos, nachos and salads in 3 hours to drive increased revenue</li>
-                <li>Manage the cleaning, drying, and storage of 300+ dishes in 3 hours for coworker utilization</li>
-                <li>Building proficiency in 1-3 roles to cover shifts for absent team members, strengthening versatility and teamwork skills</li>
-            </ul>
-        </div>
-    </section>
+            <div class="card">
+                <h3>Operating Systems</h3>
+                <div class="skills-grid">
+                    <div class="skill-tag">Windows (Git, development)</div>
+                    <div class="skill-tag">Linux (RIT Ubuntu servers, command-line tools, development)</div>
+                </div>
+            </div>
 
-    <section id="skills">
-        <h2>Key Skills</h2>
-        <div class="skills-list">
-            <div class="skill">Python</div>
-            <div class="skill">Java</div>
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">C</div>
-            <div class="skill">Git</div>
-            <div class="skill">GitHub</div>
-            <div class="skill">VS Code</div>
-            <div class="skill">PyCharm</div>
-            <div class="skill">IntelliJ</div>
-        </div>
-    </section>
+            <div class="card">
+                <h3>Soft Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-tag">Communication</div>
+                    <div class="skill-tag">Problem Solving</div>
+                    <div class="skill-tag">Team Collaboration</div>
+                    <div class="skill-tag">Adaptability</div>
+                    <div class="skill-tag">Active Listening</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Concepts</h3>
+                <div class="skills-grid">
+                    <div class="skill-tag">Object-Oriented Programming (OOP)</div>
+                    <div class="skill-tag">Data Structures</div>
+                    <div class="skill-tag">Algorithms</div>
+                    <div class="skill-tag">Unit Testing</div>
+                    <div class="skill-tag">JSON</div>
+                    <div class="skill-tag">GUI Development</div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            
+            <div class="card">
+                <h3>RoomiePay</h3>
+                <p class="card-meta">Java, JavaFX, JUnit, IntelliJ IDEA, Git, GitHub | November 2025 - Present</p>
+                <ul>
+                    <li>Developing a Java desktop app to manage expenses for 2–10+ roommates, using a layered OOP architecture to reduce manual balance tracking by 100% through automated calculations</li>
+                    <li>Implementing backend logic with 100% model test coverage and file-based persistence for dozens of expenses, ensuring consistent data accuracy and reliable state restoration across sessions</li>
+                    <li>Building a JavaFX interface with 3+ interactive panels (dashboard, expense entry, roommate manager), centralizing all actions in one UI and improving usability by reducing navigation steps</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <a href="" target="_blank"><h3>RangeLine</h3></a>
+                <p class="card-meta">Python, MatPlotLib, Pytest, JSON, PyCharm, Git, GitHub | August 2025 - October 2025</p>
+                <ul>
+                    <li>Built a Python desktop app using modular design patterns to record and analyze golf club distances, improving data processing reliability and code maintainability</li>
+                    <li>Optimized the data-entry pipeline by ~70% through multi-entry submission, input validation, and reduced I/O operations, significantly accelerating user workflows</li>
+                    <li>Engineered JSON-based persistence and Matplotlib visualizations to handle 100+ distance records, enabling automated trend analysis and supporting data-driven performance insights</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Work Experience</h2>
+            
+            <div class="card">
+                <h3>Line Crew Member and Dishwasher</h3>
+                <p class="card-meta">Cantina Bar & Grille at Global Village, Rochester Institute of Technology | September 2024 - Present</p>
+                <ul>
+                    <li>Assemble 150+ burritos, bowls, and tacos per shift, supporting team efficiency and customer satisfaction</li>
+                    <li>Manage the cleaning, drying, and storage of 300+ dishes in 3 hours to maintain smooth operations</li>
+                    <li>Build proficiency in 2+ roles to cover shifts for coworkers, improving adaptability and teamwork skills</li>
+                </ul>
+            </div>
+        </section>
+    </div>
 
     <footer>
-        <p>&copy; 2025 Kris Bali | Portfolio</p>
+        <p>&copy; 2025 Portfolio. All rights reserved.</p>
+        <div class="contact-links" id="contact">
+            <a href="https://github.com/Oxerlax" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/krisbali" target="_blank">LinkedIn</a>
+            <a>Email: kob20800@gmail.com</a>
+        </div>
     </footer>
 
     <script src="script.js" defer></script>
