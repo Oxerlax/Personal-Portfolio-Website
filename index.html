@@ -24,7 +24,7 @@
 
     <div class="container">
         <section id="home">
-            <h1>Software Engineer</h1>
+            <h1>Software Engineering Intern</h1>
             <p class="subtitle">Designing, building, and improving software systems</p>
             <p class="subtitle">Seeking Summer 2026 Internship</p>
             <a href="#projects" class="cta-button">View My Work</a>
@@ -56,8 +56,31 @@
                         <p class="gpa">GPA: 3.93/4.00</p>
                     </div>
                 </div>
-                <p style="margin-top: 20px;"><strong>Relevant Coursework:</strong> Computer Science I/II, Computer Science Theory, Mechanics of Programming</p>
-                <p style="margin-top: 20px;"><strong>Expected Coursework:</strong> Introduction to Software Engineering, Analysis of Algorithms</p>
+                <p style="margin-bottom: 10px;"><strong>Relevant Coursework:</strong></p>
+                <ul> 
+                    <li>
+                        Web Engineering
+                    </li>
+                    <li>
+                        Introduction to Software Engineering
+                    </li>
+                    <li>
+                        Principles of Data Management
+                    </li>
+                    <li>
+                        Analysis of Algorithms
+                    </li>
+                    <li>
+                        Mechanics of Programming
+                    </li>
+                    <li>
+                        Computer Science Theory
+                    </li>
+                    <li>
+                        Computer Science I/II
+                    </li>
+                </ul>
+                <!-- <p style="margin-top: 20px;"><strong>Expected Coursework:</strong> </p> -->
             </div>
         </section>
 
@@ -67,19 +90,21 @@
             <div class="card">
                 <h3>Languages</h3>
                 <div class="skills-grid">
-                    <div class="skill-tag">Python</div>
                     <div class="skill-tag">Java</div>
-                    <div class="skill-tag">HTML/CSS</div>
-                    <div class="skill-tag">JavaScript</div>
+                    <div class="skill-tag">Python</div>
+                    <div class="skill-tag">PostgreSQL</div>
                     <div class="skill-tag">C</div>
+                    <div class="skill-tag">JavaScript</div>
+                    <div class="skill-tag">HTML/CSS</div>
                 </div>
             </div>
 
             <div class="card">
-                <h3>Tools</h3>
+                <h3>Developer Tools</h3>
                 <div class="skills-grid">
                     <div class="skill-tag">Git</div>
                     <div class="skill-tag">GitHub</div>
+                    <div class="skill-tag">GitLab</div>
                     <div class="skill-tag">Visual Studio Code</div>
                     <div class="skill-tag">PyCharm</div>
                     <div class="skill-tag">IntelliJ IDEA</div>
@@ -108,11 +133,13 @@
             <div class="card">
                 <h3>Concepts</h3>
                 <div class="skills-grid">
+                    <div class="skill-tag">Software Development Life Cycle (SDLC)</div>
                     <div class="skill-tag">Object-Oriented Programming (OOP)</div>
                     <div class="skill-tag">Data Structures</div>
                     <div class="skill-tag">Algorithms</div>
                     <div class="skill-tag">Unit Testing</div>
                     <div class="skill-tag">JSON</div>
+                    <div class="skill-tag">HTTP</div>
                     <div class="skill-tag">GUI Development</div>
                 </div>
             </div>
@@ -121,25 +148,91 @@
 
         <section id="projects">
             <h2>Projects</h2>
-            
+
             <div class="card">
-                <a href="https://github.com/Oxerlax/RoomiePay" target="_blank"><h3>RoomiePay</h3></a>
-                <p class="card-meta">Java, JavaFX, JUnit, IntelliJ IDEA, Git, GitHub | November 2025 - Present</p>
-                <ul>
-                    <li>Developing a Java desktop app to manage expenses for 2–10+ roommates, using a layered OOP architecture to reduce manual balance tracking by 100% through automated calculations</li>
-                    <li>Implementing backend logic with 100% model test coverage and file-based persistence for dozens of expenses, ensuring consistent data accuracy and reliable state restoration across sessions</li>
-                    <li>Building a JavaFX interface with 3+ interactive panels (dashboard, expense entry, roommate manager), centralizing all actions in one UI and improving usability by reducing navigation steps</li>
-                </ul>
+                <h3>ChessGUI</h3>
+                <p class="card-meta"><strong>Java, JavaFX, Git, GitHub | March 2025 - April 2025</strong></p>
+                <p class="main-project-description">
+                    A JavaFX puzzle application featuring 9 single-player chess boards. 
+                    The goal of each puzzle is to eliminate every piece on the board using 
+                    standard chess movement rules until exactly one remains.
+
+                    The centerpiece of the project is a BFS solver I implemented to traverse 
+                    possible board states and determine a valid solution path. This was built 
+                    shortly after learning the algorithm, applying it independently to a 
+                    multi-piece, stateful problem with branching move trees. When a player 
+                    requests a hint, the solver automatically moves the next piece to capture another piece. If no 
+                    winning path exists from the current position, the system correctly 
+                    identifies it as unsolvable rather than returning a bad hint.
+
+                    Players can fully reset the board at any point or load a new puzzle from a .txt file in the following format: 
+                    <br>
+                    <br>
+                    6 6 <br>
+                    R . . . . R <br>
+                    . B . . B . <br>
+                    . . P P . . <br>
+                    . . P P . . <br>
+                    . B . . B . <br>
+                    R . . . . R <br>
+                    <br>
+                    The numbers represent the size of the board (rows, columns) and the letters represent piece types. <br>
+                    R = Rook, B = Bishop, P = Pawn, N= Knight, Q = Queen, K= King, . = Empty Space.
+
+                    <br>
+                    <br>
+
+                    <strong>Loading a Chess Board and Requesting a Hint:</strong>
+
+                    <div style="display: flex; margin-top: 10px;">
+                        <img src="StartingChessGUI.png" alt="ChessGUI Starting Board" style="width: 100%;  margin-right: 20px;">
+
+                        <img src="AfterHintChessGUI.png" alt="ChessGUI After Hint" style="width: 100%;">
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <strong>Loading a Different Chess Board:</strong>
+                    <br>
+                    <img src="LoadChessGUI.png" alt="ChessGUI Loading New Board" style="width: 100%; margin-top: 20px;">
+                </p>
+            </div>
+
+            <div class="card">
+                <a href="https://github.com/Oxerlax/RoomiePay" target="_blank"><h3>RoomiePay (In Progress)</h3></a>
+                <p class="card-meta"><strong>Java, JavaFX, JUnit, IntelliJ IDEA, Git, GitHub | November 2025 - Present</strong></p>
+                <p class="main-project-description">
+                    Developing a Java desktop application to help 2–10+ roommates track and 
+                    split shared expenses. Built on a layered OOP architecture with a clear 
+                    separation between model, persistence, and UI layers.
+
+                    The backend handles automated expense calculations and file-based 
+                    persistence, restoring application state reliably across sessions. 
+                    The model layer has 100% JUnit test coverage. Currently building out 
+                    the JavaFX interface with a dashboard, expense entry panel, and roommate 
+                    manager — all consolidated in a single window.
+                </p>
             </div>
 
             <div class="card">
                 <a href="https://github.com/Oxerlax/RangeLine" target="_blank"><h3>RangeLine</h3></a>
-                <p class="card-meta">Python, MatPlotLib, Pytest, JSON, PyCharm, Git, GitHub | August 2025 - October 2025</p>
-                <ul>
-                    <li>Built a Python desktop app using modular design patterns to record and analyze golf club distances, improving data processing reliability and code maintainability</li>
-                    <li>Optimized the data-entry pipeline by ~70% through multi-entry submission, input validation, and reduced I/O operations, significantly accelerating user workflows</li>
-                    <li>Engineered JSON-based persistence and Matplotlib visualizations to handle 100+ distance records, enabling automated trend analysis and supporting data-driven performance insights</li>
-                </ul>
+                <p class="card-meta"><strong>Python, MatPlotLib, Pytest, JSON, PyCharm, Git, GitHub | August 2025 - October 2025</strong></p>
+                <p class="main-project-description">
+                    A cross-platform CLI tool (Windows, macOS, Linux) for golfers to record, 
+                    update, and analyze club distance data. Built in Python with a modular 
+                    architecture separating entry point, business logic, and storage concerns.
+
+                    Distances are automatically persisted to JSON on first run. Matplotlib 
+                    visualizations surface per-club averages and historical performance trends, 
+                    helping identify patterns over time. Core logic is fully validated with Pytest 
+                    across club types and edge case inputs.
+                    <br>
+                    <br>
+                    RangeLine Trend Visualization After 15+ Shots for a Driver:
+                    <br>
+                    <img src="TrendRangeLine.png" alt="RangeLine Trend Visualization" style="width: 100%; max-width: 600px; margin-top: 20px;">
+                </p>
             </div>
         </section>
 
@@ -159,10 +252,10 @@
     </div>
 
     <footer>
-        <p>&copy; 2025 Portfolio. All rights reserved.</p>
+        <p>&copy; 2026 Portfolio. All rights reserved.</p>
         <div class="contact-links" id="contact">
-            <a href="https://github.com/Oxerlax" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/krisbali" target="_blank">LinkedIn</a>
+            <a href="https://github.com/Oxerlax" target="_blank"><u>GitHub</u></a>
+            <a href="https://www.linkedin.com/in/krisbali" target="_blank"><u>LinkedIn</u></a>
             <a>Email: kob20800@gmail.com</a>
         </div>
     </footer>

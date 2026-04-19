@@ -204,10 +204,16 @@ h2::after {
 }
 
 .card-meta {
-    color: #9733ee;
+    color: #e0e0e0;
     font-size: 14px;
     margin-bottom: 10px;
     font-style: italic;
+}
+
+.main-project-description {
+    color: #e0e0e0;
+    margin-bottom: 20px;
+    line-height: 1.6;
 }
 
 .card ul {
