@@ -15,18 +15,18 @@
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#education">Education</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
             <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <div class="container">
         <section id="home">
-            <h1>Software Engineering Intern</h1>
+            <h1>AI Software Engineering Intern</h1>
             <p class="subtitle">Designing, building, and improving software systems</p>
-            <p class="subtitle">Seeking Summer 2026 Internship</p>
+            <p class="subtitle">Seeking Full Stack or Backend AI Software Engineering Internships &mdash; Summer 2027</p>
             <a href="#projects" class="cta-button">View My Work</a>
         </section>
 
@@ -34,11 +34,17 @@
             <h2>About Me</h2>
             <div class="card">
                 <p style="font-size: 18px; line-height: 1.8;">
-                    Hello! I'm a Computer Science student at Rochester Institute of Technology with a passion for building efficient, 
-                    scalable software systems. With a strong foundation in object-oriented programming, data structures, and 
-                    algorithms, I enjoy tackling complex problems and creating solutions that make a real impact. I'm actively 
-                    seeking a Software Engineering Internship for Summer 2026 where I can apply my skills and continue growing 
-                    as a developer!
+                    Hello! I'm a Computer Science student at Rochester Institute of Technology focused on building full-stack
+                    applications that connect clean frontend experiences with reliable backend systems. I've worked with
+                    technologies like Angular, TypeScript, Python, Java, and Spring Boot to design and implement scalable features,
+                    from structuring REST APIs to developing interactive user interfaces, and I recently completed an AI
+                    Automation Engineer internship at Blulabs, building production LLM agents integrated with live business
+                    systems. What sets me apart is a focus on implementation depth over surface-level exposure. I don't
+                    just learn frameworks, I use them to build complete, working systems and understand how the pieces fit
+                    together. I'm particularly drawn to logic-heavy problems, whether that's implementing chess movement systems
+                    or optimizing algorithms, because they push me to think deeply about correctness and performance. I'm
+                    currently seeking a Full Stack or Backend AI Software Engineering internship for Summer 2027, where I can
+                    contribute to real-world products and continue growing as a full-stack AI engineer!
                 </p>
             </div>
         </section>
@@ -50,103 +56,64 @@
                     <div class="education-left">
                         <h3>Rochester Institute of Technology</h3>
                         <p style="margin-top: 20px;">Bachelor's of Science, Computer Science</p>
-                        <p style="margin-top: 20px;">August 2024 - August 2028 | Rochester, NY</p>
+                        <p style="margin-top: 20px;">August 2024 - May 2028 | Rochester, NY</p>
                     </div>
                     <div class="education-right">
                         <p class="gpa">GPA: 3.88/4.00</p>
                     </div>
                 </div>
-                <p style="margin-bottom: 10px;"><strong>Relevant Coursework:</strong></p>
-                <ul> 
-                    <li>
-                        Web Engineering
-                    </li>
-                    <li>
-                        Introduction to Software Engineering
-                    </li>
-                    <li>
-                        Principles of Data Management
-                    </li>
-                    <li>
-                        Analysis of Algorithms
-                    </li>
-                    <li>
-                        Mechanics of Programming
-                    </li>
-                    <li>
-                        Computer Science Theory
-                    </li>
-                    <li>
-                        Computer Science I/II
-                    </li>
+                <p style="margin-bottom: 10px;"><strong>Completed Coursework:</strong></p>
+                <ul>
+                    <li>Computer Science I (Python)</li>
+                    <li>Computer Science II (Java)</li>
+                    <li>Mechanics of Programming (C Programming Language)</li>
+                    <li>Introduction to Computer Science Theory</li>
+                    <li>Introduction to Software Engineering</li>
+                    <li>Web Engineering</li>
+                    <li>Analysis of Algorithms</li>
+                    <li>Principles of Data Management</li>
                 </ul>
-                <!-- <p style="margin-top: 20px;"><strong>Expected Coursework:</strong> </p> -->
+                <p style="margin: 20px 0 10px;"><strong>In-Progress Coursework:</strong></p>
+                <ul>
+                    <li>Introduction to Artificial Intelligence</li>
+                    <li>Machine Learning</li>
+                    <li>Concepts of Computer Systems</li>
+                </ul>
+                <p style="margin: 20px 0 10px;"><strong>Skills In Progress:</strong></p>
+                <ul>
+                    <li>Agentic AI</li>
+                    <li>LLMs</li>
+                </ul>
             </div>
         </section>
 
-        <section id="skills">
-            <h2>Technical Skills</h2>
+        <section id="experience">
+            <h2>Professional Experience</h2>
 
             <div class="card">
-                <h3>Frameworks and Languages</h3>
-                <div class="skills-grid">
-                    <div class="skill-tag">Spring Boot</div>
-                    <div class="skill-tag">Angular</div>
-                    <div class="skill-tag">Java</div>
-                    <div class="skill-tag">Python</div>
-                    <div class="skill-tag">PostgreSQL</div>
-                    <div class="skill-tag">TypeScript</div>
-                    <div class="skill-tag">C</div>
-                    <div class="skill-tag">JavaScript</div>
-                    <div class="skill-tag">HTML/CSS</div>
-                </div>
+                <h3>AI Automation Engineer Intern</h3>
+                <p class="card-meta">Blulabs | June 2026 - August 2026 | Remote</p>
+                <ul>
+                    <li>Pioneered an AI-assisted engineering workflow using Claude Code, pairing agentic AI development with direct integration into live ERP, Microsoft SQL Server, and business systems to compress multi-week engineering cycles into days</li>
+                    <li>Architected Blulabs' internal AI-powered quoting platform, a Cloudflare Workers-based landed-cost engine used daily by sales and finance teams, with automated freight-cost intelligence, real-time margin validation, and batch repricing</li>
+                    <li>Designed and deployed autonomous AI agents into live supply-chain operations, including a supplier cargo-ready-date escalation agent and a purchase-order/proforma invoice verification agent, reducing manual review workload while closing real data-integrity gaps across hundreds of active purchase orders</li>
+                    <li>Built proactive financial and operational monitoring agents, including margin-drift detection and supplier booking-performance reporting, giving leadership early visibility into revenue risk that previously went undetected until after the fact</li>
+                    <li>Re-architected agent tool-calling pipelines by moving per-record looping out of the LLM's control flow into internal Python batch processing, cutting external actions from 9,000+ down to as few as 5 per run, reducing daily API call volume by roughly 75%, and adding concurrent execution for a 4x throughput speedup</li>
+                    <li>Built a blended ocean freight rate lookup tool by integrating a new database connection to carrier rate tables, automatically selecting the cheapest qualifying rate per port and feeding it into the quoting platform's freight-cost intelligence</li>
+                    <li>Authored paired technical and business Standard Operating Procedures (SOPs) for internally built AI agents and tools, giving both engineers and non-technical stakeholders a clear reference for how each system works and how to maintain it</li>
+                    <li>Found and fixed multiple data-integrity and reliability bugs in production agents during testing and rollout, including a customer-name matching bug, a hard failure on missing files, and a metrics double-counting issue, before they affected real business data</li>
+                </ul>
             </div>
 
-            <div class="card">
-                <h3>Developer Tools</h3>
-                <div class="skills-grid">
-                    <div class="skill-tag">Git</div>
-                    <div class="skill-tag">GitHub</div>
-                    <div class="skill-tag">GitLab</div>
-                    <div class="skill-tag">Visual Studio Code</div>
-                    <div class="skill-tag">PyCharm</div>
-                    <div class="skill-tag">IntelliJ IDEA</div>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3>Operating Systems</h3>
-                <div class="skills-grid">
-                    <div class="skill-tag">Windows (Git, development)</div>
-                    <div class="skill-tag">Linux (RIT Ubuntu servers, command-line tools, development)</div>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3>Soft Skills</h3>
-                <div class="skills-grid">
-                    <div class="skill-tag">Communication</div>
-                    <div class="skill-tag">Problem Solving</div>
-                    <div class="skill-tag">Team Collaboration</div>
-                    <div class="skill-tag">Adaptability</div>
-                    <div class="skill-tag">Active Listening</div>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3>Concepts</h3>
-                <div class="skills-grid">
-                    <div class="skill-tag">Software Development Life Cycle (SDLC)</div>
-                    <div class="skill-tag">Object-Oriented Programming (OOP)</div>
-                    <div class="skill-tag">Data Structures</div>
-                    <div class="skill-tag">Algorithms</div>
-                    <div class="skill-tag">Unit Testing</div>
-                    <div class="skill-tag">JSON</div>
-                    <div class="skill-tag">HTTP</div>
-                    <div class="skill-tag">GUI Development</div>
-                </div>
-            </div>
-
+            <!-- <div class="card">
+                <h3>Line Crew Member & Dishwasher</h3>
+                <p class="card-meta">Cantina Bar & Grille at Global Village, Rochester Institute of Technology | September 2024 - August 2026</p>
+                <ul>
+                    <li>Assembled ingredients for 150+ total burritos, burrito bowls, tacos, nachos, and salads in 3 hours to drive increased revenue</li>
+                    <li>Managed the cleaning, drying, and storage of 300+ dishes in 3 hours for coworker utilization</li>
+                    <li>Built proficiency in 2+ roles to cover shifts for absent team members, strengthening versatility and teamwork skills</li>
+                </ul>
+            </div> -->
         </section>
 
         <section id="projects">
@@ -231,18 +198,81 @@
             </div>
         </section>
 
-        <section id="experience">
-            <h2>Work Experience</h2>
-            
+        <section id="skills">
+            <h2>Technical Skills</h2>
+
             <div class="card">
-                <h3>Line Crew Member and Dishwasher</h3>
-                <p class="card-meta">Cantina Bar & Grille at Global Village, Rochester Institute of Technology | September 2024 - Present</p>
-                <ul>
-                    <li>Assemble 150+ burritos, bowls, and tacos per shift, supporting team efficiency and customer satisfaction</li>
-                    <li>Manage the cleaning, drying, and storage of 300+ dishes in 3 hours to maintain smooth operations</li>
-                    <li>Build proficiency in 2+ roles to cover shifts for coworkers, improving adaptability and teamwork skills</li>
-                </ul>
+                <h3>Frameworks and Languages</h3>
+                <div class="skills-grid">
+                    <div class="skill-tag">Spring Boot</div>
+                    <div class="skill-tag">Angular</div>
+                    <div class="skill-tag">Java</div>
+                    <div class="skill-tag">Python</div>
+                    <div class="skill-tag">PostgreSQL</div>
+                    <div class="skill-tag">TypeScript</div>
+                    <div class="skill-tag">C</div>
+                    <div class="skill-tag">JavaScript</div>
+                    <div class="skill-tag">HTML/CSS</div>
+                </div>
             </div>
+
+            <div class="card">
+                <h3>AI & Automation</h3>
+                <div class="skills-grid">
+                    <div class="skill-tag">Relevance AI</div>
+                    <div class="skill-tag">Claude Code</div>
+                    <div class="skill-tag">Prompt Engineering</div>
+                    <div class="skill-tag">LLM Agent Development</div>
+                    <div class="skill-tag">Cloudflare Workers</div>
+                    <div class="skill-tag">Standard Operating Procedure (SOP) Writing</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Developer Tools</h3>
+                <div class="skills-grid">
+                    <div class="skill-tag">Git</div>
+                    <div class="skill-tag">GitHub</div>
+                    <div class="skill-tag">GitLab</div>
+                    <div class="skill-tag">Visual Studio Code</div>
+                    <div class="skill-tag">PyCharm</div>
+                    <div class="skill-tag">IntelliJ IDEA</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Operating Systems</h3>
+                <div class="skills-grid">
+                    <div class="skill-tag">Windows (Git, development)</div>
+                    <div class="skill-tag">Linux (RIT Ubuntu servers, command-line tools, development)</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Soft Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-tag">Communication</div>
+                    <div class="skill-tag">Problem Solving</div>
+                    <div class="skill-tag">Team Collaboration</div>
+                    <div class="skill-tag">Adaptability</div>
+                    <div class="skill-tag">Active Listening</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Concepts</h3>
+                <div class="skills-grid">
+                    <div class="skill-tag">Software Development Life Cycle (SDLC)</div>
+                    <div class="skill-tag">Object-Oriented Programming (OOP)</div>
+                    <div class="skill-tag">Data Structures</div>
+                    <div class="skill-tag">Algorithms</div>
+                    <div class="skill-tag">Unit Testing</div>
+                    <div class="skill-tag">JSON</div>
+                    <div class="skill-tag">HTTP</div>
+                    <div class="skill-tag">GUI Development</div>
+                </div>
+            </div>
+
         </section>
     </div>
 
